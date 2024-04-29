@@ -15,6 +15,7 @@ oidc_polling = {{ RUCIO_CFG_OIDC_POLLING | default('true') }}
 oidc_audience = {{ RUCIO_CFG_OIDC_AUDIENCE | default('rucio') }} 
 oidc_scope = {{ RUCIO_CFG_OIDC_SCOPE | default('openid profile offline_access wlcg wlcg.groups fts:submit-transfer') }} 
 auth_oidc_refresh_activate = {{ RUCIO_CFG_AUTH_OIDC_REFRESH_ACTIVATE | default('true') }} 
+auth_token_file_path = {{ RUCIO_CFG_AUTH_TOKEN_FILE_PATH | default('') }}
 
 [policy]
 permission = {{ RUCIO_CFG_POLICY_PERMISSION | default('escape')}}
